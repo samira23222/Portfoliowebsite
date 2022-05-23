@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web page</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6db6e014e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+       <nav>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <ul class="navlinks">
+            <li><a href="About.html">About me!</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="https://github.com/samira23222?tab=repositories">Projects</a></li>
+        </ul>
+       </nav>
+
+
+    <!--Title-->
+
+    <div class="title-header"> 
+        <div class="first">Samira</div>
+        <div class="last">Uriarte</div>
+        <div class="ani"> <img src="images/airfinal.png" width="100" height="100"> </div>
+    </div>
+
+    <!--Shining stars-->
+    
+    <div class="star"><img src="star1.png" width="100" height="100" alr="star">
+    <div class="shine"></div>
+    </div>
+   
+
+    <!--Clouds animation-->
+   
+
+   <div class="background">
+        <div class="c1">
+            <div class="cloud"> <img src="images/airfinal.png" width="50" height="35" alt="cloud">  </div>
+        </div>
+        <div class="c2">
+            <div class="cloud">  <img src="images/cloudlol.png" width="200" height="150" alt="cloud"></div>
+        </div>
+        <div class="c3">
+            <div class="cloud">  <img src="images/cloudlol.png" width="200" height="150" alt="cloud"></div>
+        </div>
+        <div class="c4">
+            <div class="cloud">  <img src="images/cloudlol.png" width="200" height="150" alt="cloud"></div>
+        </div>
+        <div class="c5">
+            <div class="cloud">  <img src="images/cloudlol.png" width="200" height="210" alt="cloud"></div>   
+        </div>
+      
+    </div> 
+    <script src="script.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+            Host : "smtp.yourisp.com",
+            Username : "username",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+           }).then(
+            message => alert(message)
+            );
+
+        }
+    </script>
+</body>
+</html>
